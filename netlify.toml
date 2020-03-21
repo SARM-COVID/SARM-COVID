@@ -4,3 +4,39 @@
   publish = "out"
   command = "npm run export"
 
+
+[[redirects]]
+  from = "https://sarm-covid.org/*"
+  to = "https://sarm-covid.fr/:splat"
+  status = 301
+  force = true
+[[redirects]]
+  from = "https://sarm-covid19.fr/*"
+  to = "https://sarm-covid.fr/:splat"
+  status = 301
+  force = true
+[[redirects]]
+  from = "https://sarm-covid19.org/*"
+  to = "https://sarm-covid.fr/:splat"
+  status = 301
+  force = true
+[[redirects]]
+  from = "https://www.sarm-covid.fr/*"
+  to = "https://sarm-covid.fr/:splat"
+  status = 301
+  force = true
+[[redirects]]
+  from = "https://www.sarm-covid.org/*"
+  to = "https://sarm-covid.fr/:splat"
+  status = 301
+  force = true
+[[redirects]]
+  from = "https://www.sarm-covid19.fr/*"
+  to = "https://sarm-covid.fr/:splat"
+  status = 301
+  force = true
+[[redirects]]
+  from = "https://www.sarm-covid19.org/*"
+  to = "https://sarm-covid.fr/:splat"
+  status = 301
+  force = true
