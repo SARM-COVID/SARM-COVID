@@ -43,7 +43,7 @@ class mainPage extends Component {
             {/* <PageTitleCovid>- COVID</PageTitleCovid> */}
           </TitleWrapper>
           <Paragraph>
-            Face à l’épidémie de Covid-19, vous souhaitez vous porter volontaire ?
+            Face à l’épidémie de Covid-19, vous souhaitez en tant que professionnel de santé vous porter volontaire ?
              Cette plateforme vous permet de vous inscrire. Nous coordonnons ensuite
              la répartition des volontaires dans les différents établissements.
           </Paragraph>
