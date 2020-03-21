@@ -218,9 +218,10 @@ display: flex;
   flex-direction: column;
 }
 `
+const SECTION_HEIGHT = '400';
 const Section1Left = styled.div`
 width: 65%;
-height: 500px;
+height: ${SECTION_HEIGHT}px;
 background-color: #00155d;
 display: flex;
 flex-direction: column;
@@ -234,7 +235,7 @@ position: relative;
 `
 const Section1Right = styled.div`
 width: 35%;
-height: 500px;
+height: ${SECTION_HEIGHT}px;
 background-color: #b15201;
 display: flex;
 flex-direction: column;
