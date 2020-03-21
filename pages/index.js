@@ -266,7 +266,7 @@ color: #ffffff;
 margin-left: 20px;
 
 `
-const Section1Description = styled.h3`  
+const Section1Description = styled.h3`
 font-family: 'Roboto', sans-serif;
 font-size: 18px;
 font-weight: 500;
@@ -278,7 +278,7 @@ color: #ffffff;
 width: 90%;
 `
 
-const Section1Item = styled.h4`  
+const Section1Item = styled.h4`
 font-family: 'Roboto', sans-serif;
 font-size: 18px;
 font-weight: 500;
@@ -296,7 +296,7 @@ align-items: center;
 align-self: flex-end;
 justify-self: flex-end;
 position: absolute;
-bottom: 40px; 
+bottom: 40px;
 right: 40px;
 `
 const Section1Link1 = styled.div`
@@ -328,7 +328,7 @@ line-height: normal;
 letter-spacing: normal;
 text-align: center;
 color: #ffffff;
-border: 4px solid #ffffff; 
+border: 4px solid #ffffff;
 padding: 10px;
 margin-left: 40px;
 cursor: pointer;
