@@ -69,6 +69,11 @@ export default class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
+          <script
+            type="text/javascript"
+            src="https://platform-api.sharethis.com/js/sharethis.js#property=5e76015a4518d30012a3f7a1&product=inline-share-buttons"
+            async="async"
+          ></script>
         </body>
       </html>
     );
