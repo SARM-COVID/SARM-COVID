@@ -50,10 +50,6 @@ class mainPage extends Component {
                 </HeroSection>
 
                 <FrameContainer>
-                    <Image
-                        src={this.state.displayMobile ? '/static/images/mobile-background-referent.png' : '/static/images/background-referent.png'}
-                        alt='aperçu covid univers'
-                    />
                     <iframe src="https://airtable.com/embed/shrvaCq3dxHZeSFJh?backgroundColor=red"
                         style={{
                             className: "airtable-embed airtable-dynamic-height",
