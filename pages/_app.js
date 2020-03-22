@@ -5,6 +5,9 @@ import App, { Container } from 'next/app'
 import { withRouter } from 'next/router'
 
 import { ThemeProvider } from 'styled-components';
+import ReactGA from 'react-ga';
+
+const GOOGLE_ANALYTICS_ID = 'UA-161437155-1';
 
 const theme = {
 	colors: {
@@ -27,6 +30,12 @@ export default (withRouter(
 				}
 			}
 		}
+
+		componentDidMount() {
+			ReactGA.initialize(GOOGLE_ANALYTICS_ID);
+			ReactGA.pageview(window.location.pathname + window.location.search);
+		}
+
 		render() {
 			const { Component, pageProps, router } = this.props
 			return (
