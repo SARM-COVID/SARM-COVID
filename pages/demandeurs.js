@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import styled from "styled-components";
 import Link from 'next/link'
+import Header from '../components/header';
+import Footer from '../components/footer';
 
 class mainPage extends Component {
 
@@ -34,21 +36,7 @@ class mainPage extends Component {
     render() {
         return (
             <PageContainer>
-                <HeroSection>
-                    <Link href="/"><Lync style={{ textDecoration: 'none' }}>
-                        <TitleWrapper>
-                            <Logo src='/static/images/SRAM-LOGO.png' alt='SRAM LOGO' />
-                            <TitleContainer>
-                                <PageTitle>SARM</PageTitle>
-                                <PageSubtitle>Service d'aide à la répartition médicale</PageSubtitle>
-                            </TitleContainer>
-                            {/* <PageTitleCovid>- COVID</PageTitleCovid> */}
-                        </TitleWrapper>
-
-
-                    </Lync></Link>
-                </HeroSection>
-
+                <Header />
                 <FrameContainer>
                     <Image
                         src={this.state.displayMobile ? '/static/images/mobile-background-referent.png' : '/static/images/background-referent.png'}
@@ -66,11 +54,7 @@ class mainPage extends Component {
                         }}>
                     </iframe>
                 </FrameContainer>
-
-                <Footer>
-                    <FooterParagraph> &copy; SARM - COVID19 Service d'aide à la répartition médicale</FooterParagraph>
-                </Footer>
-
+                <Footer />
             </PageContainer>
         );
     }
@@ -99,93 +83,7 @@ height: 2200px;
 
 }
 `
-const HeroSection = styled.div`
-width: 100%;
-padding: 10px;
-height: 100px;
-display: flex;
-flex-direction: column;
-background-color: white;
-@media (max-width: 768px){
-  height: 150px;
-}
-`
-
-const TitleWrapper = styled.div`
-display: flex;
-align-items: flex-start;
-`
-const Lync = styled.a`
-display: flex;
-align-items: flex-start;
-cursor: pointer;
-`
-
-const TitleContainer = styled.div`
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-justify-content: center;
-margin-left: 10px;
-`
-const Logo = styled.img`
-width: 75px;
-height: 75px;
-`
-const PageTitle = styled.h1`
-font-family: 'Roboto', sans-serif;
-font-size: 48px;
-font-weight: bold;
-font-stretch: normal;
-font-style: normal;
-line-height: normal;
-letter-spacing: normal;
-color: #4a4a4a;
-margin: 0;
-`
-
-const PageSubtitle = styled.p`
-font-family: 'Roboto', sans-serif;
-font-size: 15px;
-font-weight: normal;
-font-stretch: normal;
-font-style: normal;
-line-height: normal;
-letter-spacing: normal;
-color: #4a4a4a;
-margin: 0;
-`
-
-const Section1 = styled.div`
-width: 90%;
-margin: 0 5%;
-`
 
 const Image = styled.img`
 width: 100%;
 `
-
-// ---------------------------------------
-
-const Footer = styled.footer`
-width: 100%;
-height: 100px;
-background-color: #333333;
-display: flex;
-justify-content: center;
-align-items: center;
-`
-
-const FooterParagraph = styled.p`
-/* width: 100%; */
-font-family: 'Roboto', sans-serif;
-font-size: 19.2px;
-font-weight: normal;
-font-stretch: normal;
-font-style: normal;
-line-height: normal;
-letter-spacing: normal;
-color: #8c8c8c;
-`
-
-// ---------------------------------------
