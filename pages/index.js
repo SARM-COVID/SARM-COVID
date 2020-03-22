@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from "styled-components";
 import Link from 'next/link'
+import ShareButtons from '../components/share-btns';
 
 class mainPage extends Component {
 
@@ -47,7 +48,7 @@ class mainPage extends Component {
              Cette plateforme vous permet de vous inscrire. Nous coordonnons ensuite
              la répartition des volontaires dans les différents établissements.
           </Paragraph>
-          <Link1>JE PARTAGE L'INITIATIVE</Link1>
+          <ShareButtons />
         </HeroSection>
 
         <Section1>
